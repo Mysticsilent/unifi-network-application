@@ -3,7 +3,9 @@
 This docker compose configuration helps generating a new unifi network application install with the external mongo-db database service.
 #### Docker images
 Unifi network application is based on the new Linuxserver.io and official Mongo docker images.
+ 
 [linuxserver/unifi-network-application](https://hub.docker.com/r/linuxserver/unifi-network-application)
+ 
 [mongo:4.0.28](https://hub.docker.com/_/mongo)
 
 ## Installation

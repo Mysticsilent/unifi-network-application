@@ -1,4 +1,4 @@
-# Unifi network application
+# Unifi-network-application
 
 This docker compose configuration helps generating a new unifi network application install with the external mongo-db database service.
 #### Docker images

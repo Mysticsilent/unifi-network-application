@@ -20,3 +20,20 @@ or if you use older docker-compose version:
 https://hostname:8443 and follow the wizard.
 
 Enjoy!
+
+
+
+## MongoDB issue with CPU AVX error on Proxmox host?
+1. Edit the file
+```nano /etc/pve/virtual-guest/cpu-models.conf```
+2. Enter the following config:
+```
+cpu-model: x86-64-v2-AES-AVX
+    flags +avx;+avx2;+xsave;+aes;+popcnt;+ssse3;+sse4_1;+sse4_2
+    phys-bits host
+    hidden 0
+    hv-vendor-id proxmox
+    reported-model kvm64
+```
+3. Choose the new CPU type in the VM Guest CPU settings.
+```x86-64-v2-AES-AVX```
